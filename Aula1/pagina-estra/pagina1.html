@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 1000px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+        }
+        
+        th, td{
+            border: 2px solid gray;
+            padding: 5px;
+        }
+
+        
+        
+        #telefone{
+            width: 300px;
+            height: 150px;
+            background-color: gray;
+            margin-top: 10px;
+            position: absolute;
+            top: 20px;
+            left: 870px;
+        }
+         tbody > td:nth-child(n1){
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+     <table>
+            <colgroup>
+                <col class="vermelho">
+                <col class="preto">
+                <col class="amarelo">
+            </colgroup>
+            <caption>
+                Filmes favoritos
+            </caption>
+            <thead>
+                <tr>
+                    <th>Grupo</th>
+                    <th>Nomes</th>
+                    <th colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3">Mulheres</th>
+                    <td>Ana Maria santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+        
+                <tr>
+                    <td>Beatriz souza</td>
+                    <td>hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Claudia melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big hero</td>
+                </tr>
+        
+                <tr>
+        
+                    <th rowspan="3">Homens</th>
+                    <td>Bruno mendonca</td>
+                    <td>intocavies</td>
+                    <td>amnesia</td>
+                    <td>gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel lourenco</td>
+                    <td>wall-E</td>
+                    <td>oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano mota</td>
+                    <td>Star wars 5</td>
+                    <td>Taxi driver</td>
+                    <td>toy story</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
