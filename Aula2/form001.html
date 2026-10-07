@@ -6,14 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome">
+            <input type="text" name="nome" id="inome" required minlength="5" maxlength="8" size="9">
         </p>
         <p><label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome">
+            <input type="text" name="sobrenome" id="isobrenome" required >
         </p>
         <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
     </form>
 </body>
 </html>
