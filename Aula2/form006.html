@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos com formularios</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <p>
+        <label for="iprovi">Provincia</label>
+        <select name="provi" id="iprovi">
+            <option value="" selected>---Escolha---</option>
+            <optgroup label="Zona sul">
+               <option value="M">Maputo</option>
+               <option value="G">Gaza</option>
+               <option value="I">Inhambane</option>
+            </optgroup>
+            <optgroup label="Zona centro">
+                <option value="S">Sofala</option>
+                <option value="M">Manica</option>
+                <option value="T">Tete</option>
+            </optgroup>
+        </select>
+    </p>
+</body>
+</html>
