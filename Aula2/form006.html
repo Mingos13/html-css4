@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1>Exemplos com formularios</h1>
-    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <form action="cadastro.php" method="post" autocomplete="on">
     <p>
         <label for="iprovi">Provincia</label>
-        <select name="provi" id="iprovi">
+        <select name="provi" id="iprovi" >
             <option value="" selected>---Escolha---</option>
             <optgroup label="Zona sul">
                <option value="M">Maputo</option>
@@ -23,6 +23,29 @@
                 <option value="T">Tete</option>
             </optgroup>
         </select>
+
     </p>
+    <p>
+            <label for="iprof">profissao:</label>
+            <input type="text" name="prof" id="iprof" list="isprof">
+            <datalist id="isprof">
+                <option >Medico</option>
+                <option >Infermeiro</option>
+                <option >Jogador</option>
+            </datalist>
+        </p>
+         <p>
+            <label for="itex">Deixe sua mensagem aqui</label><br>
+            <textarea name="tex" id="itex" cols="" rows="" placeholder="sua mensagem" required></textarea>
+         </p>
+         <p><label for="ifoto">Foto</label> 
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+    </p>
+    </form>
 </body>
 </html>
