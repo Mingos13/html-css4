@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="">
+        <p><label for="eida">Contagem:</label>
+        <input type="range" name="ida" id="eida" min="1990" max="2022"
+        oninput="iidade.innerHTML = Number(eida.value)"></p>
+        
+        <p><label for="iidade">Sua idade:</label>
+        <output id="iidade">6</output></p>
+
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpar">
+      </p>
+    </form>
+</body>
+</html>
