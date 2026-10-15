@@ -33,3 +33,38 @@
 
 
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+        #phone {display: none;}
+        #tablet{display: none;}
+        #print{display: none;}
+        #pc   {display: block;}
+        #tv   {display: none;}
+
+
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+    
+        #phone {display: none;}
+        #tablet{display: none;}
+        #print{display: none;}
+        #pc   {display: none;}
+        #tv   {display: block;}
+
+}
